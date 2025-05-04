@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TaTua Milktea Registration</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("https://tocotocotea.com/wp-content/uploads/2021/10/tocotoco-hanh-trinh-sang-lap.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.register-container {
+    width: 350px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.register-button {
+    background-color: #f0c14b; /* Example color, adjust as needed */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 95%;
+    margin-top: 10px;
+}
+
+.login-link {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.error-message {
+   color: red;
+   font-size: 0.8em;
+   margin-top: 5px;
+}
+</style>
+</head>
+<body>
+
+ <div class="register-container">
+   <img src="http://localhost/duan01/duan01img/LOGO-removebg-preview.png" alt="ToCoToCo Logo" class="logo">
+   <h2>Create an Account</h2>
+   <input type="text" class="input-field" placeholder="Enter your full name" id="fullName">
+   <input type="text" class="input-field" placeholder="Enter your phone number" id="phoneNumber">
+   <input type="email" class="input-field" placeholder="Enter your email" id="email">
+   <input type="password" class="input-field" placeholder="Enter your password" id="password">
+   <input type="password" class="input-field" placeholder="Confirm your password" id="confirmPassword">
+   <div id="passwordMatchError" class="error-message"></div>
+   <button type="button" class="register-button" onclick="validateRegistration()">REGISTER</button>
+   <div class="login-link"><a href="dangnhap.html">Already have an account? Log in</a></div>
+</div>
+
+<script>
+function validateRegistration() {
+ var fullName = document.getElementById("fullName").value;
+ var phoneNumber = document.getElementById("phoneNumber").value;
+ var email = document.getElementById("email").value;
+ var password = document.getElementById("password").value;
+ var confirmPassword = document.getElementById("confirmPassword").value;
+ var passwordMatchError = document.getElementById("passwordMatchError");
+ var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+ var phoneRegex = /^\d{10}$/; // Basic 10-digit phone number validation
+
+ if (fullName.trim() === "") {
+   alert("Please enter your full name.");
+ return;
+ }
+
+ if (!phoneRegex.test(phoneNumber)) {
+   alert("Please enter a valid 10-digit phone number.");
+   return;
+ }
+
+if (!emailRegex.test(email)) {
+   alert("Please enter a valid email address.");
+ return;
+ }
+
+ if (password.length < 6) {
+  alert("Password must be at least 6 characters long.");
+ return;
+ }
+
+ if (password !== confirmPassword) {
+ passwordMatchError.textContent = "Passwords do not match.";
+ return;
+ } else {
+     passwordMatchError.textContent = ""; // Clear the error message if they match
+ }
+
+ // If all validations pass, you can proceed with registration logic
+ alert("Registration successful!");
+ // window.location.href = 'home.html'; // Redirect to a home page after successful registration
+}
+</script>
+
+</body>
+</html>
