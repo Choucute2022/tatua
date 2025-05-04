@@ -1,1 +1,46 @@
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .left-section {
+    width: 200px;
+  }
+
+  .center-section {
+    flex-grow: 1;
+    text-align: center;
+    position: relative; /* Thêm position: relative; */
+  }
+
+  .search-input {
+    width: 370px;
+    padding: 10px 40px 10px 10px; /* Thêm padding bên trái để tạo không gian cho biểu tượng */
+    border: 0px solid #f8f8f8;
+    border-radius: 5px;
+  }
+
+  
+  
+  .nut-dat{
+    background-color: #e7b96f; /* Màu cam */
+    color: #fff; /* Màu trắng */
+    padding: 10px 20px;
+    
+  }
+  .nut-dat1{
+    background-color: #fff; /* Màu cam */
+    color: #e7b96f; /* Màu trắng */
+    padding: 10px 25px;
+    
+  }
+  
+  
+  
+ 
+  
+
+
 
