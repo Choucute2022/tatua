@@ -1,0 +1,88 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: url('../images/view.png') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      position: relative;
+      color: white;
+      overflow: hidden;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 12px 40px;
+      font-size: 18px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  color: #FFF8E1;
+  text-decoration: none;
+}
+
+.logo:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+    .nav-center {
+      list-style: none;
+      display: flex;
+      gap: 35px;
+    }
+
+    .nav-center li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      position: relative;
+    }
+
+    .nav-center li a.active::after {
+      content: '';
+      display: block;
+      height: 2px;
+      background: white;
+      margin-top: 4px;
+      width: 100%;
+    }
+
+    .hero {
+      position: absolute;
+      bottom: 160px; /* điều chỉnh để đặt nút đúng vị trí trong ảnh */
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .order-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+
+    .order-button:hover {
+      background-color: orange;
+      color: white;
+    }
