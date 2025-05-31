@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('../images/view.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+    position: relative;
+    color: white;
+    overflow-y: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 12px 40px;
+    font-size: 18px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    color: #FFF8E1;
+    text-decoration: none;
+}
+
+.nav-center {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-center li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+.nav-center li a.active::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: white;
+    margin-top: 4px;
+    width: 100%;
+}
+
+.banner {
+    background: url('https://via.placeholder.com/1920x400') no-repeat center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    margin-top: 60px;
+}
+
+/* Thanh cuộn tùy chỉnh */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #FFF8E1;
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: orange;
+}
+
+/* Sản Phẩm Nổi Bật */
+.featured-products {
+    padding: 50px 40px;
+    background: rgba(0, 0, 0, 0.6);
+    max-width: 1200px;
+    margin: 50px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #FFF8E1;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-card p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.product-card .price {
+    color: #FFF8E1;
+    font-weight: bold;
+}
+
+.new-label {
+    display: block;
+    background-color: #ff4500;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.order-button-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.order-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #e9c46a;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.order-button:hover {
+    background-color: #f4a261;
+    color: white;
+}
+
+/* Về Chúng Tôi */
+.about {
+    padding: 50px 40px;
+    background: url('../images/about.png') no-repeat center;
+    background-size: cover;
+    max-width: 1200px;
+    margin: 50px auto;
+    position: relative;
+    min-height: 500px;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.about-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end; /* Đẩy nội dung sang bên phải */
+    padding: 20px;
+    height: 100%;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left; /* Căn trái trong khu vực bên phải */
+}
+
+.about-title {
+    font-size: 32px;
+    color: #f4a261;
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+}
+
+.about-subtitle {
+    font-size: 36px;
+    color: #264653;
+    margin: 10px 0;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #FFF8E1;
+    margin: 0 0 20px;
+}
+
+.about-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #e9c46a;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.about-button:hover {
+    background-color: #f4a261;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .nav-center {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .product-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 200px;
+    }
+
+    .about-content {
+        padding: 10px;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+}

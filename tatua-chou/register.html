@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaTua Milktea</title>
+
+  <!-- Font viết tay Pacifico -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff8e1;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 30px;
+      background: linear-gradient(to right, #ffa726, #ffcc80);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .left-section {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-text {
+      font-family: 'Pacifico', cursive, sans-serif;
+      font-size: 40px;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    .center-section {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      margin: 0 20px;
+    }
+
+    .search-input {
+      width: 60%;
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #ffb74d;
+      border-radius: 25px;
+      outline: none;
+    }
+
+    .button-section {
+      display: flex;
+      gap: 10px;
+    }
+
+    .nut-dat, .nut-dat1 {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .nut-dat {
+      background-color: #fb8c00;
+      color: white;
+    }
+
+    .nut-dat:hover {
+      background-color: #ef6c00;
+    }
+
+    .nut-dat1 {
+      background-color: #fdd835;
+      color: #333;
+    }
+
+    .nut-dat1:hover {
+      background-color: #fbc02d;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="left-section">
+      <span class="logo-text">Tatua Milktea</span>
+    </div>
+
+    <div class="center-section">
+      <input type="text" class="search-input" placeholder="Tìm kiếm sản phẩm...">
+    </div>
+
+    <div class="button-section">
+      <button onclick="window.location.href='dangnhap.html'" class="nut-dat">Đăng nhập</button>
+      <button onclick="window.location.href='dangky.html'" class="nut-dat">Đăng ký</button>
+    </div>
+  </div>
+</body>
+</html>

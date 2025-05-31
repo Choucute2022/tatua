@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Footer - Tông màu cam vàng</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    footer {
+      background-color: #fff7e6;
+      color: #663300;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 30px 15px;
+      background-color: #ffe0b3; /* Vàng nhạt */
+    }
+
+    .footer-section-company-info,
+    .social-media {
+      flex: 1 1 280px;
+      margin: 10px;
+    }
+
+    .footer-section-company-info {
+      text-align: left; /* Căn trái toàn bộ nội dung */
+    }
+
+    .footer-section-company-info .logo-text {
+      font-family: 'Pacifico', cursive, sans-serif;
+      font-size: 40px;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      margin-bottom: 10px;
+    }
+
+    .footer-section-company-info h2 {
+      color: #cc6600; /* Cam đậm */
+    }
+
+    .footer-section-company-info p {
+      margin: 6px 0;
+    }
+
+    .footer-section-company-info svg,
+    .social-media svg {
+      vertical-align: middle;
+      margin-right: 6px;
+      fill: #cc6600; /* Cam đậm */
+    }
+
+    .social-media {
+      margin-top: 20px;
+    }
+
+    .social-media svg {
+      width: 32px;
+      height: 32px;
+      margin-right: 12px;
+      transition: transform 0.3s, fill 0.3s;
+    }
+
+    .social-media svg:hover {
+      fill: #ff9900; /* Cam sáng */
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+
+    .footer-bottom {
+      background-color: #cc6600; /* Cam đậm */
+      color: white;
+      text-align: center;
+      padding: 12px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        align-items: flex-start; /* Căn trái trên màn hình nhỏ */
+      }
+
+      .footer-section-company-info,
+      .social-media {
+        width: 90%;
+        text-align: left; /* Căn trái trên màn hình nhỏ */
+      }
+    }
+  </style>
+  <!-- Font viết tay Pacifico -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <footer>
+    <div class="footer-container">
+      <!-- Thông tin công ty -->
+      <div class="footer-section-company-info">
+        <span class="logo-text">Tatua Milktea</span>
+        <h2>TATUA MILKTEA COMPANY</h2>
+
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+            <path d="M2 2h12v2H2V2zm0 3h12l-1 8H3L2 5z"/>
+          </svg>
+          <strong>Trụ sở chính:</strong> Tầng 5, Tòa nhà số 1, Times City, 458 Minh Khai, Hà Nội.
+        </p>
+
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+            <path d="M2 2h12v2H2V2zm0 3h12l-1 8H3L2 5z"/>
+          </svg>
+          <strong>Chi nhánh miền Nam:</strong> Tầng 2, 373-375 Nguyễn Trọng Tuyển, Tân Bình, TP. HCM.
+        </p>
+
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+            <path d="M3.654 1.328a.678.678 0 0 1 .738-.07l2.522 1.261a.678.678 0 0 1 .291.93l-1.2 2.4a.678.678 0 0 0 .144.805l2.457 2.457a.678.678 0 0 0 .805.144l2.4-1.2a.678.678 0 0 1 .93.291l1.261 2.522a.678.678 0 0 1-.07.738l-1.2 1.6A1.678 1.678 0 0 1 12.5 15h-9A1.678 1.678 0 0 1 2 13.5v-9c0-.48.192-.942.536-1.286l1.118-1.118z"/>
+          </svg>
+          <strong>Hotline:</strong> 1900.63.69.36
+        </p>
+
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v.217l-8 4.8-8-4.8V4zm0 1.383v6.634L5.803 8.14 0 5.383zm6.761 3.403l-6.24 3.744A2 2 0 0 0 2 14h12a2 2 0 0 0 1.479-.47l-6.24-3.744-1.239.744-1.239-.744zM16 5.383L10.197 8.14 16 12.017V5.383z"/>
+          </svg>
+          <strong>Email:</strong> <a href="mailto:info@tatua.com">info@tatua.com</a>
+        </p>
+
+        <p><strong>Mã số doanh nghiệp:</strong> 0106341036 - Cấp ngày 16/03/2017.</p>
+        <p><strong>Nơi cấp:</strong> Sở Kế hoạch và Đầu tư Thành phố Hà Nội.</p>
+
+        <!-- Mạng xã hội -->
+        <div class="social-media">
+          <!-- Facebook -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M8.94 6.5H10.5V4h-1.56C7.92 4 7 4.916 7 6v1H6v2h1v5h2V9h1.5l.5-2H10V6c0-.28.22-.5.5-.5z"/>
+          </svg>
+          <!-- Instagram -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 3a5 5 0 1 0 0 10A5 5 0 0 0 8 3zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+            <circle cx="12.5" cy="3.5" r="1"/>
+          </svg>
+          <!-- YouTube -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-youtube" viewBox="0 0 16 16">
+            <path d="M8.051 1.999h-.102c-.868.002-5.12.052-6.263.422C.586 2.7.002 3.823 0 8c.002 4.176.586 5.3 1.686 5.579 1.143.37 5.395.42 6.263.422h.102c.868-.002 5.12-.052 6.263-.422 1.1-.28 1.684-1.403 1.686-5.579-.002-4.176-.586-5.3-1.686-5.579-1.143-.37-5.395-.42-6.263-.422zm-2.2 4.948v3.106l2.92-1.553-2.92-1.553z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 TATUA MilkTea Company. Đã đăng ký bản quyền.
+    </div>
+  </footer>
+</body>
+</html>
